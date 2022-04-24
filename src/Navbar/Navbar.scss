@@ -1,0 +1,184 @@
+.Navbar{
+    padding: 0 30px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 128, 255, 0.597);
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    
+    &__logo{
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 700;
+        color: whitesmoke;
+    }
+    &__nav{
+      margin-right:100px ;
+      margin-left:auto;
+      
+    }
+    .tel{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+       
+        &__item{
+           list-style: none;
+           margin: 15px;
+           &__link{
+               color: whitesmoke;
+               font-size: 18px;
+               text-decoration: none;
+               &--active{
+                font-size: 18px;
+                color: rgb(252, 255, 255);
+               }
+           }
+        }
+    }
+    &__tel{
+        display:block;
+        text-decoration: none;
+        color: aliceblue;
+        padding: 5px ;
+        background-color: rgb(25, 26, 26);
+        border-radius: 5px;
+    }
+    .toggel{
+        display: none;
+    }
+}
+
+//media 815
+
+@media only screen and (max-width: 815px){
+    .Navbar{
+        padding: 0 30px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 128, 255, 0.597);
+        position: fixed;
+        
+        &__logo{
+            text-decoration: none;
+            font-size: 35px;
+            font-weight: 700;
+            color: whitesmoke;
+        }
+        &__nav{
+      top: -350px;
+       width: 100%;
+         &--active{
+           
+             top: 0;
+         } 
+        }
+        .tel{
+            display: flex;
+            color: aliceblue;
+            text-decoration: none;
+            padding: 5px;
+            background: black;
+            border-radius: 5px;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        .nav{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            z-index: 999;
+            left: 0;
+            transition: 0.7s ease-in-out;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            width: 100%;
+            height: 350px;
+           
+            &__item{
+               list-style: none;
+               margin: 15px;
+               &__link{
+                   color: rgb(0, 0, 0);
+                   font-size: 18px;
+                   text-decoration: none;
+                   &--active{
+                    font-size: 18px;
+                    color: rgb(62, 71, 71);
+                   }
+               }
+            }
+        }
+        
+        &__tel{
+           display: none;
+        }
+
+        &__toggel{
+            z-index: 1000;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 35px;
+            height: 30px;
+           
+            &::after{
+                content: "";
+                width: 100%;
+                height: 5px ;
+                background-color: aliceblue;
+               border-radius: 3px;
+            }
+            span{
+                width: 100%;
+                height: 5px ;
+                background-color: aliceblue;
+                border-radius: 3px;
+            }
+            &::before{
+                content: "";
+                width: 100%;
+                height: 5px ;
+                background-color: aliceblue;
+                border-radius: 3px;
+            }
+
+            &--active{
+                &::after{
+                    position: absolute;
+                   transform: rotateZ(50Deg);
+                   transition: 0.5s ease-in-out;
+                   background-color: rgb(0, 0, 0);
+                   top: 13px;
+                }
+                span{
+                    display: none;
+                }
+                &::before{
+                    position: absolute;
+                    transform: rotateZ(-50Deg);
+                    transition: 0.5s ease-in-out;
+                    background-color: rgb(1, 1, 1);
+                    bottom: 13px;
+                   
+                }
+            }
+          
+        }
+        .lng{
+            margin-left: auto;
+         }
+    }
+    
+}

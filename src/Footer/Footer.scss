@@ -1,0 +1,156 @@
+.Footer{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-color: rgba(0, 128, 255, 0.597);
+    padding: 0 100px;
+    &__bar{
+        width: 350px;
+    
+    }
+    .bar{
+     padding-top: 30px;
+     &__title{
+        font-family: 'Times New Roman', Times, serif;
+       
+         margin: 0;
+         margin-right: auto;
+         color:black;
+         text-align: left;
+     }
+     &__text{
+         margin-top: 30px;
+         color:black;
+         font-size: 19px;
+         text-align: left;
+         font-family: 'Times New Roman', Times, serif;
+     }
+     &__link{
+         margin-top: 20px;
+         display: flex;
+         text-align: left;
+         color: blue;
+         margin-bottom: 20px;
+     }
+    }
+    &__nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 18px;
+        &__menu{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        padding-top: 18px;
+            &__link{
+                text-align: left;
+                margin: 15px;
+                color: black;
+                font-size: 17px;
+            }
+        }
+
+        &__box{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+                margin: 10px;
+                color: blue;
+                text-decoration: none;
+                font-size: 20px;
+            &__link{
+                display: flex;
+             
+                align-items: center;
+                margin: 10px;
+                color: blue;
+                text-decoration:none;
+                font-size: 20px;
+                img{
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                }
+            }
+        }  
+    }    
+}
+
+@media only screen and (max-width: 770px){
+    .Footer{
+        width: 100%;
+        min-height: 300px;
+        display:block;
+        margin-top: 50px;
+        background-color: rgba(0, 128, 255, 0.597);
+        padding: 10px 20px;
+        &__bar{
+            width: 350px;
+        
+        }
+        .bar{
+            width: 100%;
+         padding-top: 30px;
+         &__title{
+            font-family: 'Times New Roman', Times, serif;
+             margin: 0;
+             margin-right: auto;
+             color:black;
+             text-align: left;
+            }
+         &__text{
+             margin-top: 30px;
+             color:black;
+             font-size: 19px;
+             text-align: left;
+             font-family: 'Times New Roman', Times, serif;
+            }
+         &__link{
+             margin-top: 20px;
+             display: flex;
+             text-align: left;
+             color: blue;
+             margin-bottom: 20px;
+            }
+        }
+
+        &__nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction:row;
+            padding-top: 18px;
+            &__menu{
+                width:200px;
+                display: flex;
+                   align-items: flex-start;
+                   flex-direction: column;
+               &__link{
+                   text-decoration: none;
+                   margin: 10px;
+                   color: white;
+               }
+            }
+            &__box{
+                width:150px;
+                display: flex;
+                align-items:flex-start;
+                flex-direction: column;
+               &__link{
+                   margin: 7px;
+                   text-decoration: none;
+                   font-size: 18px;
+                   img{
+                       width: 30px;
+                       height: 30px;
+                       border-radius: 50%;
+                   }
+               }
+            } 
+        }
+    }
+}

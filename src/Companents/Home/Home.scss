@@ -1,0 +1,53 @@
+.Home{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+   
+    &__Myimg{
+        border-radius: 50%;
+        display:flex;
+        object-fit: cover;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+        height: 370px;
+        margin-top: 90px;
+        background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+        linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); ;
+       img{
+           display: flex;
+           width: 350px;
+           height: 350px;
+           border-radius: 50%;
+       }
+    }
+    &__git{
+        &:hover{
+            opacity: 0.7;
+        }
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:80%;
+        border: 1px solid;
+        font-size: 20px;
+        text-decoration: none;
+        color: aliceblue;
+        box-shadow: 0 0 5px 5px rgba(0,0,0,0.2); 
+        background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+        linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); ;
+        img{
+            display: flex;
+            width: 60px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+    }
+}

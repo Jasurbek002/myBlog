@@ -1,0 +1,17 @@
+{
+    "Welcome_to_React":"Brend",
+    "servises_to":"Bizning xizmatlar",
+    "create_bot":"Bot yaratish",
+    "carate_website":"Web site yaratish",
+
+    "about_me" :"Assalom-u alaykum mening ismim Jasurbek Turg'unov",
+    "about_me_dicription" : "Men Front-end dasturchisiman. Men dasturlashni 2021 yilda o‘rgana boshladim. Faoliyatim davomida ko‘plab loyihalarni amalga oshirdim va o‘zim uchun tajriba orttirdim.",
+    "my_project" :"Mening loyihalarim",
+
+    "alan_bot" : "Bu proektda Alan ovozli Sun'iy intelekt bilnan ishalngan. Alan orqali Web sayitlarga ovozli buyruqlar qo'shsish mumkin.Men bu proektimda Sun'iy intelekt insonga ko'proq qulayliklar yaratishini tushundim. shu kabi loyhalarni ko'proq amalyotga tadbiq qilish kerak",
+    "filim_site" : "Html, scss, Bootstrap5, JavaScript yordamida qilinga qidruv tizimiga ega kinolar sayiti ",
+    "watch_site":"WatchFlix kinolar sayitini klon versiyasi React js yordamida yasalgan. Bu loyhada men React jsni chuqur o'rganganman.",
+    "new_site":"Yosh bolalar kiyimlari sotiladigan internet magazin. Bu sayit  Html, scss , js yordamida yasalgan ",
+    "todos_site":"Ajoyib dizayinli Todo List, siz bu loyha yordamida ozingiz uchun bajariladigan va bajarilgan ishlar ro'yhatini tuzishingiz mumkin"
+
+}

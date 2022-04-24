@@ -1,0 +1,30 @@
+{
+    "Welcome_to_React":"LOGO",
+    "servises_to":"Our services",
+    "create_bot":"Creating a bot",
+    "carate_website":"Creating a Web site",
+
+    "home":"Home",
+    "about":"About me",
+    "project":"Projects",
+
+    "gitHub":"GitHub",
+    "Linkedin":"LinKedIn",
+    "telegram":"Telegram",
+    "gmail":"email",
+    "insta":"Instagram",
+    "face":"Facebook",
+    "phone":"Phone",
+
+    "about_me" :"Hello, my name is Jasurbek Turgunov",
+    "about_me_dicription" : "I am a Front end programmer.I started studying programming in 2021. Throughout my career, I have done many projects and gained experience for myself",
+    "my_project" :"My projects",
+
+    "alan_bot":"In this project, Alan uses sound artificial intelligence. You can add voice commands to Web sites through Alan. In this project, I realized that Artificial Intelligence is more convenient for humans.",
+    "filim_site":"Movie site with html, scss, Bootstrap5, JavaScript search engine",
+    "watch_site":"The clone version of the WatchFlix movie site was created using React js. In this project, I have studied React js in depth.",
+    "new_site":"An online store that sells children's clothing. This site is created using Html, scss, js",
+    "todos_site":"With a great design Todo List, you can use this project to create a list of things to do and accomplish for yourself"
+
+
+}

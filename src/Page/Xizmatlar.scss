@@ -1,0 +1,59 @@
+.Xizmatlar{
+    margin-top: 50px;
+    width: 100%;
+    min-height: 500px;
+    display: block;
+    
+    &__title{
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(40, 80, 125);
+    }
+    &__box{
+        display: flex;
+        justify-content: center;
+
+       
+    }
+    .box{
+      margin-top: 50px;
+      padding: 50px;
+        &__card{
+            &:hover{
+                opacity: 0.7;
+            }
+            background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+        linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); ;
+            text-decoration: none;
+            color:white;
+            font-size: 20px;
+            padding: 20px;
+            box-shadow: 0 0 5px 5px rgba(0,0,0,0.2); 
+            width: 320px;
+            background-color: white;
+            margin:0 5%;
+            margin-top: 40px;
+            &__img{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                // border: 1px solid;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .Xizmatlar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .box{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+}
