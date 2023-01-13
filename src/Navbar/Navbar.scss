@@ -1,18 +1,23 @@
 .Navbar{
+    z-index: 2;
     padding: 0 30px;
+    position: fixed;
     display: flex;
+    top: 0;
+    left: 0;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0, 128, 255, 0.597);
-    position: fixed;
+    background-color: #051e3e;
+    // background-image:linear-gradient((to right, rgba(12, 123, 233, 0.537),rgba(3, 126, 250, 0.285)));
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     
     &__logo{
         text-decoration: none;
-        font-size: 35px;
+        font-size: 40px;
         font-weight: 700;
-        color: whitesmoke;
+        color: #051e3e;
+        -webkit-text-stroke: 1px rgb(255, 200, 0);
     }
     &__nav{
       margin-right:100px ;
@@ -33,6 +38,11 @@
                color: whitesmoke;
                font-size: 18px;
                text-decoration: none;
+               &:hover{
+                border-bottom: 2px solid white;
+                transition: 2s all ease-in-out;
+                width: 100%;
+               }
                &--active{
                 font-size: 18px;
                 color: rgb(252, 255, 255);
@@ -47,6 +57,20 @@
         padding: 5px ;
         background-color: rgb(25, 26, 26);
         border-radius: 5px;
+        border: 2px solid #051e3e;
+        transition: all 1s ease-in-out;
+        &:hover{
+            transition: all 1s ease-in-out;
+            background-color: #051e3e;
+            border: 2px solid #ffffff;
+            color: white;
+        }
+        &:active{
+            transition: all 1s ease-in-out;
+            background-color: #ffffff;
+            border: 2px solid #ffffff;
+            color:#051e3e;
+        }
     }
     .toggel{
         display: none;
@@ -57,26 +81,30 @@
 
 @media only screen and (max-width: 815px){
     .Navbar{
-        padding: 0 30px;
+        padding: 0 20px;
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        background-color: rgba(0, 128, 255, 0.597);
+        background-color: rgba(240, 248, 255, 0);
+        background:white;
         position: fixed;
         
         &__logo{
             text-decoration: none;
             font-size: 35px;
             font-weight: 700;
-            color: whitesmoke;
+            color: rgb(90, 88, 87);
         }
         &__nav{
-      top: -350px;
-       width: 100%;
+            z-index: -999;
+            top:-350px;
+           width: 100%;
+           left: -200px;
          &--active{
-           
-             top: 0;
+          top: 0;
+           z-index: 999;
+             
          } 
         }
         .tel{
@@ -91,7 +119,8 @@
             }
         }
         .nav{
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            box-shadow: 0 0 5px black;
             z-index: 999;
             left: 0;
             transition: 0.7s ease-in-out;
@@ -99,7 +128,7 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            background-color: rgb(255, 255, 255);
+            background-color: #96adf9;
             padding: 10px;
             width: 100%;
             height: 350px;
@@ -137,20 +166,20 @@
                 content: "";
                 width: 100%;
                 height: 5px ;
-                background-color: aliceblue;
+                background-color: rgb(90, 88, 87);
                border-radius: 3px;
             }
             span{
                 width: 100%;
                 height: 5px ;
-                background-color: aliceblue;
+                background-color: rgb(90, 88, 87);
                 border-radius: 3px;
             }
             &::before{
                 content: "";
                 width: 100%;
                 height: 5px ;
-                background-color: aliceblue;
+                background-color: rgb(90, 88, 87);
                 border-radius: 3px;
             }
 
@@ -179,6 +208,10 @@
         .lng{
             margin-left: auto;
          }
+        
     }
     
+}
+.lang{
+    border-radius: 50%;
 }

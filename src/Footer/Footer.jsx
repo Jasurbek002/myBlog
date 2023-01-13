@@ -18,24 +18,23 @@ const Footer = () => {
          <Link className='Footer__nav__menu__link' to='/' >{t('home')}</Link>
          <Link className='Footer__nav__menu__link' to='/About' >{t('about')}</Link>
          <Link className='Footer__nav__menu__link' to='/Projects' >{t('project')}</Link>
-         <a    className='Footer__nav__menu__link' href="tel:+998337253002"> +998337253002</a>
+         <a    className='Footer__nav__menu__link' href="tel:+998908266777"> +998908266777</a>
          </ul>
 
          <div className='Footer__nav__box '>
              <a className='Footer__nav__box__link' href="https://t.me/admeral_off">
                  <img src={Tele} alt="" /> {t('telegram')}
              </a>
-             <a className='Footer__nav__box__link' href="https://t.me/admeral_off">
+             <a className='Footer__nav__box__link' href="https://www.instagram.com/invites/contact/?i=bj9h08tuvhpt&utm_content=kt8bl4k">
                  <img src={insta} alt="" /> {t('insta')}
              </a>
              <a className='Footer__nav__box__link' href="https://www.facebook.com/jasurbek.turgunov.1460">
                  <img src={face} alt="" /> {t('face')}
              </a>
-             <a className='Footer__nav__box__link' href="tel:+998916869917">
+             <a className='Footer__nav__box__link' href="tel:+998908266777">
                  <img src={phone} alt="" /> {t('phone')}
              </a>
          </div>
-
          </div>
 
          <div className='Footer__bar bar'>

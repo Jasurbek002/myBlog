@@ -4,4 +4,16 @@
   box-sizing: border-box;
 
 }
+.continer{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+::-webkit-scrollbar{
+display: none;
+}
 
+web
+.body{
+  /* background-color: #051e3e; */
+  font-family: 'Fraunces', serif;
+}

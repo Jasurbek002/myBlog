@@ -1,34 +1,50 @@
 import React from 'react';
-import "./Project.scss"
-import {useTranslation} from 'react-i18next'
-const Porject = () => {
-    const {t} = useTranslation()
-    return (
-        <div className='Projects'>
-           
-           <div className='Projects__card'>
-               <a href="https://gifted-goldberg-cd6959.netlify.app/">tranquil-sunburst-f9070b.netlify.app</a>
-               <p className='Projects__card__text'>{t('filim_site')}</p>
-           </div>
-           <div className='Projects__card'>
-               <a href="https://tourmaline-snickerdoodle-fb9509.netlify.app/">https://tourmaline-snickerdoodle-fb9509.netlify.app/</a>
-               <p className='Projects__card__text'>{t('watch_site')}</p>
-           </div>
-           <div className='Projects__card'>
-               <a href="https://tranquil-sunburst-f9070b.netlify.app/">tranquil-sunburst-f9070b.netlify.app</a>
-               <p className='Projects__card__text'>{t('alan_bot')}</p>
-           </div>
-           <div className='Projects__card'>
-               <a href="https://symphonious-bublanina-c0cd79.netlify.app/">tranquil-sunburst-f9070b.netlify.app</a>
-               <p className='Projects__card__text'>{t('new_site')}</p>
-           </div>
-           <div className='Projects__card'>
-               <a href="https://guileless-bienenstitch-f4fff8.netlify.app/">tranquil-sunburst-f9070b.netlify.app</a>
-               <p className='Projects__card__text'>{t('todos_site')}</p>
-           </div>
+import "./Project.scss";
+import Card from '../Card/card';
 
-        </div>
-    );
+import hh from './../../Assets/img/hh.png';
+import tdtu from './../../Assets/img/tdtu.png';
+import asmo from './../../Assets/img/asmo.png';
+
+
+const Porject = () => {
+ 
+  return (
+    <div className='Projects'>
+      <h1 className='Projects__title'>PROJECTS</h1>
+
+
+      <Card
+        status={'Production'}
+        img={hh}
+        title={'React js, Scss ,javascript, Node js, Express js postgresql'}
+        link={'https://hillhouse-capital.org/'}
+        git1={'https://github.com/Jasurbek002/hh.front.app.git'}
+        git2={'https://github.com/Jasurbek002/node-js-postgress-template.git'}
+      />
+
+      <Card
+        status={'Development'}
+        img={tdtu}
+        title={'Next js, Scss,Taliwind css,javascript, Node js, Express js, postgresql'}
+        link={'https://tdtu-ilmiy-uz.vercel.app/'}
+        git1={'https://github.com/Jasurbek002/tdtu-dev.git'}
+        git2={'https://github.com/Jasurbek002/tdtu.server.app.git'}
+      />
+
+      <Card
+        status={'Production'}
+        img={asmo}
+        title={'html, scss, bootstap, javascript'}
+        link={'https://www.asmoclinic.uz/ru/index.html'}
+        git1={'https://github.com/Jasurbek002/project.cl.app'}
+        git2={''}
+      />
+
+
+
+    </div>
+  );
 }
 
 export default Porject;

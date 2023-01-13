@@ -3,7 +3,7 @@ import "./Navbar.scss"
 import { useTranslation } from 'react-i18next'
 import i18next from "i18next";
 import { Link, NavLink } from 'react-router-dom';
-import GlobIcon from "../Assets/img/iconGlob.svg"
+import GlobIcon from "../Assets/img/Global.png"
 
 const Navbar = () => {
     const { t } = useTranslation()
@@ -37,23 +37,28 @@ const Navbar = () => {
     }
     return (
         <div className='Navbar'>
-            <Link to='/' className='Navbar__logo'>LOGO</Link>
+            <Link to='/' className='Navbar__logo'>TJ</Link>
             <ul onClick={HenderTogle} ref={nav} className='Navbar__nav nav'>
                 <li className='nav__item'>
                     <NavLink to='/' className={(props) => props.isActive ? ' nav__item__link--active' : 'nav__item__link'} >{t('home')}</NavLink>
                 </li>
+              
                 <li className='nav__item'>
                     <NavLink to='/About' className={(props) => props.isActive ? ' nav__item__link--active' : 'nav__item__link'} >{t('about')}</NavLink>
                 </li>
                 <li className='nav__item'>
+                    <NavLink to='/xizmatlar' className={(props) => props.isActive ? ' nav__item__link--active' : 'nav__item__link'}  >{t('services')}</NavLink>
+                </li>
+                <li className='nav__item'>
                     <NavLink to='/Projects' className={(props) => props.isActive ? ' nav__item__link--active' : 'nav__item__link'}  >{t('project')}</NavLink>
                 </li>
-                <a className='tel' href="tel:+998337253002">+99833 725 30 02</a>
+                
+                <a className='tel' href="tel:+998908266777">+99890 826 67 77</a>
             </ul>
 
             <div className="dropdown lng">
                 <button className="btn m-2 dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img width="40px" height="40px" color='aliceblue' src={GlobIcon} alt="lng" />
+                    <img className='lang' width="30px" height="30px"  background-color="none" src={GlobIcon} alt="lng" />
                 </button>
                 <ul className="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                     {
@@ -71,7 +76,7 @@ const Navbar = () => {
                     }
                 </ul>
             </div>
-            <a className='Navbar__tel' href="tel:+998337253002">+99833 725 30 02</a>
+            <a className='Navbar__tel' href="tel:+998908266777">+99890 826 67 77</a>
 
             <div onClick={HenderTogle} ref={togle} className='Navbar__toggel'>
                 <span></span>

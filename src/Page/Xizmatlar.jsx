@@ -11,12 +11,12 @@ const Xizmatlar = () => {
             <h2 className='Xizmatlar__title'>{t('servises_to')}</h2>
             <div className='Xizmatlar__box box'>
                
-                <Link to='/' className='box__card'>
+                <Link to='/Servis' className='box__card'>
                     <img className='box__card__img' src={site} alt="" />
                     <p className='box__card__title'>{t('carate_website')}</p>
                 </Link>
 
-                <Link to='/' className='box__card'>
+                <Link to='/Servis' className='box__card'>
                     <img className='box__card__img' src={bot} alt="" />
                     <p className='box__card__title'>{t('create_bot')}</p>
                 </Link>

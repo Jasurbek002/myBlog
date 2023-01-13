@@ -1,53 +1,130 @@
 .Home{
     display: flex;
     width: 100%;
-    align-items: center;
-    flex-direction: column;
-   
-    &__Myimg{
-        border-radius: 50%;
-        display:flex;
-        object-fit: cover;
-        align-items: center;
-        justify-content: center;
-        width: 370px;
-        height: 370px;
-        margin-top: 90px;
-        background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-        linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); ;
-       img{
-           display: flex;
-           width: 350px;
-           height: 350px;
-           border-radius: 50%;
-       }
-    }
-    &__git{
-        &:hover{
-            opacity: 0.7;
+    justify-content: space-between;
+    background-color: #051e3e;
+   &__bar{
+    padding: 50px 0;
+    background-color: #051e3e;
+    margin-top: 63px;
+    margin-bottom:0px;
+    width: 100%;
+    max-width: 400px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     &__text{
+        display: none;
+     }
+     &__contact{
+        position: relative; 
+        color: #051e3ee9;
+        &::before{
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            border-right: 1px solid rgb(21, 243, 10);
+            height: 100%;
+            -webkit-text-stroke: 1px rgb(21, 243, 10);
+            overflow: hidden;
+            animation: animate 6s linear infinite;
         }
-        border-radius: 10px;
+        @keyframes animate {
+            0%{
+                width: 0;
+            }
+            70%{
+                width: 100%;
+            }
+        }
+     }
+
+     &__git{
+        width: 100%;
+         &:hover{
+             opacity: 0.8;
+         }
+         height: 60px;
+         position: relative;
+         border-radius: 5px;
+         padding: 5px;
+         margin-top: 30px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width:90%;
+         border: 1px solid;
+         font-size: 20px;
+         text-decoration: none;
+         color: aliceblue;
+         background-color: #829ef8;
+         img{
+             position: absolute;
+             display: flex;
+             width: 45px;
+             height: 45px;
+             border-radius: 50%;
+             margin-right: 20px;
+             left:10px;
+         }
+     }
+     &__service{
+        &:hover{
+            opacity: 0.8;
+        }
+        height: 60px;
+        position: relative;
+        border-radius: 5px;
         padding: 5px;
-        margin-top: 50px;
+        margin-top: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width:80%;
+        width:90%;
         border: 1px solid;
         font-size: 20px;
         text-decoration: none;
         color: aliceblue;
-        box-shadow: 0 0 5px 5px rgba(0,0,0,0.2); 
-        background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-        linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); ;
-        img{
-            display: flex;
-            width: 60px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 20px;
+        background-color: #829ef8;
+     }
+   }
+
+   &__box{
+    max-width: 1120px;
+    // height: auto;
+    padding-top: 60px;
+    // position: relative;
+    &__title{
+        position: relative;
+        font-size: 20px;
+        color: #829ef8;
+    }
+   }
+   
+}
+
+@media only screen and (max-width: 795px) {
+    .Home{
+        display:flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        &__bar{
+            max-width: 100%;
+            &__text{
+                display: block;
+                color: #829ef8;
+                font-size: 20px;
+            }
+        }
+        &__box{
+            overflow-y: unset;
+            margin-top: 0px;  
+            &__title{
+                display: none;
+            }
         }
     }
 }

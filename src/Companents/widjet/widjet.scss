@@ -1,0 +1,25 @@
+.widget{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5px 0;
+    background-color: black;
+    overflow: hidden;
+    z-index: 999;
+    &__text{
+        //   position: absolute;
+          transform: translateX(100%);
+          animation: text 20s  infinite;
+          color: rgb(16, 6, 6);
+         
+    }
+}
+
+@keyframes text{
+    0%{
+        transform:translateX(100%);
+    } 100%{
+        transform:translateX(-100%);
+    }
+}

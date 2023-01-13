@@ -3,8 +3,11 @@
     min-height: 300px;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-    background-color: rgba(0, 128, 255, 0.597);
+    margin-top:0px;
+    background-image: url("../Assets/img/maunt.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    // background-image:linear-gradient((to right,rgba(3, 126, 250, 0.597), rgb(12, 122, 233)));
     padding: 0 100px;
     &__bar{
         width: 350px;
@@ -17,12 +20,12 @@
        
          margin: 0;
          margin-right: auto;
-         color:black;
+         color:rgb(219, 219, 219);
          text-align: left;
      }
      &__text{
          margin-top: 30px;
-         color:black;
+         color:rgb(239, 236, 236);
          font-size: 19px;
          text-align: left;
          font-family: 'Times New Roman', Times, serif;
@@ -31,7 +34,7 @@
          margin-top: 20px;
          display: flex;
          text-align: left;
-         color: blue;
+         color: rgb(136, 136, 199);
          margin-bottom: 20px;
      }
     }
@@ -48,7 +51,7 @@
             &__link{
                 text-align: left;
                 margin: 15px;
-                color: black;
+                color: rgb(243, 238, 238);
                 font-size: 17px;
             }
         }
@@ -85,8 +88,9 @@
         width: 100%;
         min-height: 300px;
         display:block;
-        margin-top: 50px;
-        background-color: rgba(0, 128, 255, 0.597);
+        background-image: url("../Assets/img/maunt.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
         padding: 10px 20px;
         &__bar{
             width: 350px;
@@ -99,12 +103,12 @@
             font-family: 'Times New Roman', Times, serif;
              margin: 0;
              margin-right: auto;
-             color:black;
+             color:rgb(255, 255, 255);
              text-align: left;
             }
          &__text{
              margin-top: 30px;
-             color:black;
+             color:rgb(255, 255, 255);
              font-size: 19px;
              text-align: left;
              font-family: 'Times New Roman', Times, serif;
